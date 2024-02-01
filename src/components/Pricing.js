@@ -18,7 +18,7 @@ export const Pricing = () => {
       <TableCaption>Avaliable Services</TableCaption>
       <TableHeader>
         <TableRow>
-          <TableHead className="w-[100px]">Service</TableHead>
+          <TableHead className="whitespace-nowrap">Service</TableHead>
           <TableHead>Vehicle Type</TableHead>
           <TableHead>Price</TableHead>
           <TableHead className="text-right">Schedule Service</TableHead>
