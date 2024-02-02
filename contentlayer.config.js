@@ -15,7 +15,7 @@ const Blog = defineDocumentType(() => ({
     },
     featuredImage: {
       type: "image",
-      required: false,
+      required: true,
     },
   },
   computedFields: {

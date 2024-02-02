@@ -16,7 +16,7 @@ export default function BlogPage({ params }) {
   if (!blog) {
     return (
       <div>
-        <h1>404 - dgw blog Page Not Found</h1>
+        <h1>404 - Service Page Not Found</h1>
       </div>
     )
   }
