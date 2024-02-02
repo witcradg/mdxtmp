@@ -3,7 +3,7 @@ import FooterContacts from "./FooterContacts"
 import FooterSocial from "./FooterSocial"
 import ServicesLinks from "./ServicesLinks"
 import IFrame from "../IFrame"
-import footerJson from "@/content/footer.json"
+import footerJson from "@/json/footer.json"
 import styles from "./Footer.module.css"
 
 const FooterBody = () => {

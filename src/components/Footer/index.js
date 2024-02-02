@@ -1,5 +1,5 @@
-import footerJson from "@/content/footer.json"
-import site from "@/content/site.config.json"
+import footerJson from "@/json/footer.json"
+import site from "@/json/site.config.json"
 import FooterBody from "./FooterBody"
 
 const copyrightMobile = () => {

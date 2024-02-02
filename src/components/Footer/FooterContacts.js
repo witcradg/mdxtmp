@@ -1,4 +1,4 @@
-import site from "@/content/site.config.json"
+import site from "@/json/site.config.json"
 
 const FooterContacts = ({ data }) => {
   // console.dir(data)

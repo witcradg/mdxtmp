@@ -1,5 +1,5 @@
 import { FaPhone, FaStar } from "react-icons/fa"
-import site from "@/content/site.config.json"
+import site from "@/json/site.config.json"
 
 const phoneNumber = site.config.phone
 const phoneHref = `tel:${phoneNumber.replace(/[^a-zA-Z0-9]/g, "")}`

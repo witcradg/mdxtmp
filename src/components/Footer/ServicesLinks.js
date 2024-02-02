@@ -1,5 +1,5 @@
 import React from "react"
-import headerJson from "@/content/header.json"
+import headerJson from "@/json/header.json"
 import Link from "next/link"
 
 const ServicesLinks = (props) => {

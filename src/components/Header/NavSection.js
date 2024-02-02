@@ -13,7 +13,7 @@ import {
 
 import { NavigationMenuSub } from "@radix-ui/react-navigation-menu"
 
-import headerJson from "@/content/header.json"
+import headerJson from "@/json/header.json"
 import { cn } from "@/lib/utils"
 
 //TODO: use NavigationMenuLink instead of Link

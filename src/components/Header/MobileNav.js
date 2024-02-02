@@ -4,7 +4,7 @@ import * as React from "react"
 import Image from "next/image"
 import Link, { LinkProps } from "next/link"
 import { useRouter } from "next/navigation"
-import site from "@/content/site.config.json"
+import site from "@/json/site.config.json"
 import { RxHamburgerMenu } from "react-icons/rx"
 
 // import { ViewVerticalIcon } from "@radix-ui/react-icons"
@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
-import headerJson from "@/content/header.json"
+import headerJson from "@/json/header.json"
 
 export const Icons = {
   logo: (props) => (
