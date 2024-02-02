@@ -4,9 +4,22 @@ import Image from "next/image"
 import RenderMdx from "@/components/RenderMdx"
 
 export default function BlogPage({ params }) {
-  // console.log(allBlogs)
+  console.log(allBlogs)
+
+  const log = allBlogs.map((blog) => {
+    console.log("path: --------- ", blog._raw.flattenedPath)
+    return blog._raw.flattenedPath
+  })
 
   const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug)
+
+  if (!blog) {
+    return (
+      <div>
+        <h1>404 - dgw blog Page Not Found</h1>
+      </div>
+    )
+  }
 
   return (
     <>
