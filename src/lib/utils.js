@@ -1,5 +1,6 @@
 import { clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
+import { compareDesc } from "date-fns"
 
 export function cn(...inputs) {
   return twMerge(clsx(inputs))
@@ -25,3 +26,9 @@ to components. It's a simple way to handle conditional styling in JavaScript.
 */
 
 export const cx = (...classNames) => classNames.filter(Boolean).join(" ")
+
+export const sortBlogs = (blogs) => {
+  return blogs
+    .slice()
+    .sort((a, b) => compareDesc(parseISO(a.date), parseISO(b.date)))
+}
