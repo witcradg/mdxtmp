@@ -8,7 +8,6 @@ const mdxComponents = {
 }
 
 const RenderMdx = ({ blog }) => {
-  console.log(blog)
   const MDXContent = useMDXComponent(blog.body.code)
   return (
     <div className="col-span-8 font-in">
