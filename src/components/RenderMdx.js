@@ -10,7 +10,7 @@ const mdxComponents = {
 const RenderMdx = ({ blog }) => {
   const MDXContent = useMDXComponent(blog.body.code)
   return (
-    <div className="col-span-8 font-in">
+    <div className="font-in">
       <MDXContent components={mdxComponents} />
     </div>
   )
