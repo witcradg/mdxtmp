@@ -1,39 +1,54 @@
 {
   "mainMenu": [
-    { "label": "Home", "link": "/" },
-    { "label": "Services", "link": "/no-op: dropdown/" },
-    { "label": "Mobile Auto Repair", "link": "/no-op: dropdown/" },
-    { "label": "Coupons", "link": "/coupons/" },
-    { "label": "Schedule Service", "link": "/appointments/" }
+    {
+      "label": "Home",
+      "link": "/"
+    },
+    {
+      "label": "Services",
+      "link": "/no-op: dropdown/"
+    },
+    {
+      "label": "Mobile Auto Repair",
+      "link": "/no-op: dropdown/"
+    },
+    {
+      "label": "Coupons",
+      "link": "/coupons/"
+    },
+    {
+      "label": "Schedule Service",
+      "link": "/appointments/"
+    }
   ],
   "submenu1": [
     {
       "label": "Tune Up",
-      "link": "/Tune-Up/"
+      "link": "/tune-up/"
     },
     {
       "label": "Brake Service",
-      "link": "/Brake-Service/"
+      "link": "/brake-service/"
     },
     {
       "label": "Exhaust Repair",
-      "link": "/Exhaust-Repair/"
+      "link": "/exhaust-repair/"
     },
     {
       "label": "Oil Change",
-      "link": "/Oil-Change/"
+      "link": "/oil-change/"
     },
     {
       "label": "Engine Light Diagnostic",
-      "link": "/Engine-Light-Diagnostic/"
+      "link": "/engine-light-diagnostic/"
     },
     {
       "label": "A/C Heating Issues",
-      "link": "/A/C-Heating-Issues/"
+      "link": "a-c-heating-issues/"
     },
     {
       "label": "Mobile Repair",
-      "link": "/Mobile-Repair/"
+      "link": "/mobile-repair/"
     }
   ],
   "submenu2": [

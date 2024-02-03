@@ -42,7 +42,7 @@ export default function BlogPage({ params }) {
         </div>
       </div>
 
-      <div className="w-full p-6 md:px-12 md:py-8 xl:w-3/4 m-auto">
+      <div className="w-full p-6 md:px-12 md:py-8 xl:w-3/4 m-auto prose prose-lg">
         <RenderMdx blog={blog} />
       </div>
     </article>
