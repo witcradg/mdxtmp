@@ -1,10 +1,10 @@
-import { sortBlogs } from "@/lib/utils"
+import { sortPages as sortPages } from "@/lib/utils"
 import Image from "next/image"
 import Link from "next/link"
 
-const HomeCoverSection = ({ blogs }) => {
-  const sortedBlogs = sortBlogs(blogs)
-  const blog = sortedBlogs[0]
+const HomeCoverSection = ({ mdxPages }) => {
+  const sortedPages = sortPages(mdxPages)
+  const mdxPage = sortedPages[0]
 
   return (
     <div className="w-full inline-block">
@@ -14,10 +14,10 @@ const HomeCoverSection = ({ blogs }) => {
           // bg-gradient-to-b from-tranparent from-0% to-dark rounded-3xl z-0"
         />
         <Image
-          src={blog.featuredImage.filePath.replace("../public", "")}
+          src={mdxPage.featuredImage.filePath.replace("../public", "")}
           placeholder="blur"
-          blurDataURL={blog.featuredImage.blurhashDataUrl}
-          alt={blog.title}
+          blurDataURL={mdxPage.featuredImage.blurhashDataUrl}
+          alt={mdxPage.title}
           fill
           className="w-full h-full object-center object-cover rounded-3xl -z-10"
         />
@@ -27,7 +27,7 @@ const HomeCoverSection = ({ blogs }) => {
               className="bg-gradient-to-r from-accent to-accent bg-[length:0px_6px]
             hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500"
             >
-              {blog.title}
+              {mdxPage.title}
             </span>
           </h1>
           <p className="inline-block mt-4 text-xl font-">Placeholder</p>

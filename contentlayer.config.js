@@ -1,7 +1,7 @@
 import { makeSource, defineDocumentType } from "@contentlayer/source-files"
 
-const Blog = defineDocumentType(() => ({
-  name: "Blog",
+const MdxPages = defineDocumentType(() => ({
+  name: "MdxPages",
   filePathPattern: "**/**/*.mdx",
   contentType: "mdx",
   fields: {
@@ -21,7 +21,7 @@ const Blog = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: "string",
-      resolve: (doc) => `/blogs/${doc._raw.flattenedPath}`,
+      resolve: (doc) => `/mdxpages/${doc._raw.flattenedPath}`,
     },
   },
 }))
@@ -29,6 +29,6 @@ const Blog = defineDocumentType(() => ({
 export default makeSource({
   /* options */
   contentDirPath: "content",
-  documentTypes: [Blog],
+  documentTypes: [MdxPages],
   disableImportAliasWarning: true,
 })

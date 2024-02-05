@@ -7,8 +7,8 @@ const mdxComponents = {
   Image,
 }
 
-const RenderMdx = ({ blog }) => {
-  const MDXContent = useMDXComponent(blog.body.code)
+const RenderMdx = ({ mdxPage }) => {
+  const MDXContent = useMDXComponent(mdxPage.body.code)
   return (
     <div className="font-in">
       <MDXContent components={mdxComponents} />

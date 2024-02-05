@@ -27,8 +27,8 @@ to components. It's a simple way to handle conditional styling in JavaScript.
 
 export const cx = (...classNames) => classNames.filter(Boolean).join(" ")
 
-export const sortBlogs = (blogs) => {
-  return blogs
+export const sortPages = (mdxPages) => {
+  return mdxPages
     .slice()
     .sort((a, b) => compareDesc(parseISO(a.date), parseISO(b.date)))
 }

@@ -1,12 +1,14 @@
-import { allBlogs } from "contentlayer/generated"
+import { allMdxPages } from "contentlayer/generated"
 import HomeCoverSection from "@/components/Home/HomeCoverSection"
 import Image from "next/image"
 import RenderMdx from "@/components/RenderMdx"
 
-export default function BlogPage({ params }) {
-  const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug)
+export default function MdxPage({ params }) {
+  const mdxPage = allMdxPages.find(
+    (mdxPage) => mdxPage._raw.flattenedPath === params.slug
+  )
 
-  if (!blog) {
+  if (!mdxPage) {
     return (
       <div>
         <h1>404 - Service Page Not Found</h1>
@@ -25,25 +27,25 @@ export default function BlogPage({ params }) {
             className="inline-block mt-6 font-semibold capitalize text-light text-5xl leading-normal
             relative w-5/6"
           >
-            {blog.title}
+            {mdxPage.title}
           </h1>
         </div>
 
         <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60">
           <Image
-            src={blog.featuredImage.filePath.replace("../public", "")}
-            alt={blog.title}
+            src={mdxPage.featuredImage.filePath.replace("../public", "")}
+            alt={mdxPage.title}
             placeholder="blur"
-            blurDataURL={blog.featuredImage.blurhashDataUrl}
-            width={blog.featuredImage.width}
-            height={blog.featuredImage.height}
+            blurDataURL={mdxPage.featuredImage.blurhashDataUrl}
+            width={mdxPage.featuredImage.width}
+            height={mdxPage.featuredImage.height}
             className="aspect-square w-full h-full object-cover object-center"
           />
         </div>
       </div>
 
       <div className="w-full p-6 md:px-12 md:py-8 xl:w-3/4 m-auto prose prose-lg">
-        <RenderMdx blog={blog} />
+        <RenderMdx mdxPage={mdxPage} />
       </div>
     </article>
   )

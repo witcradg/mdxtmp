@@ -3,13 +3,13 @@
 import Faq from "@/components/Faq"
 import Pricing from "@/components/Pricing"
 import Image from "next/image"
-import { allBlogs } from "contentlayer/generated"
+import { allMdxPages } from "contentlayer/generated"
 import HomeCoverSection from "@/components/Home/HomeCoverSection"
 
 export default function HomePage() {
   return (
     <>
-      <HomeCoverSection blogs={allBlogs} />
+      <HomeCoverSection mdxPages={allMdxPages} />
       <main className="flex flex-col items-center justify-center p-24">
         {/* <main className="m-12 lg:mx-auto"> */}
         <Faq />
