@@ -10,7 +10,7 @@ const NavigationBar = () => {
         <Link href="/">
           <Image
             src="/img/skinny-engine.webp"
-            alt="hero"
+            alt="Skinny's Engine Logo"
             width={120}
             height={120}
           />
